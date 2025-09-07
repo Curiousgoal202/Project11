@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
   res.send({
-    message: 'Hello from Webserver Project',
+    message: 'Hello from Rupali',
     version: process.env.APP_VERSION || '1.0.0',
     host: os.hostname()
   });
