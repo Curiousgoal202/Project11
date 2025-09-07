@@ -1,0 +1,17 @@
+{
+  "name": "webserver-project",
+  "version": "1.0.0",
+  "description": "Simple industry-style webserver for CI/CD demo",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node ./test/app.test.js",
+    "lint": "eslint . || true"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0"
+  }
+}
