@@ -78,10 +78,10 @@ pipeline {
             slackSend(
                 channel: '#johncena',
                 color: 'good',
-                message: "✅ SUCCESS: Job '${env.JOB_NAME}' Build #${env.BUILD_NUMBER}\n${env.BUILD_URL}"
+                message: "✅RUPALI SUCCESS: Job '${env.JOB_NAME}' Build #${env.BUILD_NUMBER}\n${env.BUILD_URL}"
             )
             mail to: 'santosgoal2024@gmail.com',
-                 subject: "SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                 subject: "RUPALI SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                  body: "The build succeeded!\n\nCheck details here: ${env.BUILD_URL}"
         }
 
