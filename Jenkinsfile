@@ -65,7 +65,7 @@ pipeline {
                                                       usernameVariable: 'DOCKER_USER',
                                                       passwordVariable: 'DOCKER_PASS')]) {
                         sh """
-                          docker run -d --name webserver -p $SERVER_PORT:8085 $DOCKER_USER/$IMAGE_NAME:$IMAGE_TAG
+                          docker run -d --name webserver -p $SERVER_PORT:80 $DOCKER_USER/$IMAGE_NAME:$IMAGE_TAG
                         """
                     }
                 }
